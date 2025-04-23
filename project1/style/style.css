@@ -1,0 +1,95 @@
+/* Background image */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://unsplash.com/photos/a-piece-of-paper-with-writing-on-it-399PPQ9ROlo') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+/* Container Card */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input */
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Add Button */
+button#addBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button#addBtn:hover {
+    background-color: #45a049;
+}
+
+/* Task List */
+ul#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Individual Task */
+li {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Completed Task */
+li.completed {
+    text-decoration: line-through;
+    color: gray;
+    background: #e0e0e0;
+}
+
+/* Delete Button */
+li button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #c0392b;
+    margin-left: 10px;
+}
+
+li button:hover {
+    color: #e74c3c;
+}
